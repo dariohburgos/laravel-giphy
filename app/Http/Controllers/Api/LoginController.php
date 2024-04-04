@@ -17,6 +17,7 @@ class LoginController extends Controller
             ], 401);
         }
         return response()->json([
+            'user_id' => $request->user()->id,
             'token' => $request->user()->createToken($request->device)->plainTextToken,
             'message' => 'Success'
         ]);

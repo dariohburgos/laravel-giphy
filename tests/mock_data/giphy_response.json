@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": "gif_id_1",
+            "title": "Funny Cat GIF",
+            "url": "https://example.com/gif1.gif"
+        },
+        {
+            "id": "gif_id_2",
+            "title": "Cute Dog GIF",
+            "url": "https://example.com/gif2.gif"
+        }
+    ]
+}

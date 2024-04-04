@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "1e16e7b9-d318-41b0-baf5-3908292e14c8",
+		"name": "Giphy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "153847",
+		"_collection_link": "https://www.postman.com/dark-shuttle-4220-1/workspace/challenge-laravel-giphy/collection/153847-1e16e7b9-d318-41b0-baf5-3908292e14c8?action=share&source=collection_link&creator=153847"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{GIPHY_API_KEY}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api_key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.giphy.com/v1/gifs/search?q={{GIPHY_QUERY}}&limit=25&offset=0&rating=g&lang=es&bundle=clips_grid_picker&api_key=cgJ71ojW0mP8IWYriv2LxmPflQ3EvrhB\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"giphy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"gifs",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{GIPHY_QUERY}}"
+						},
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "rating",
+							"value": "g"
+						},
+						{
+							"key": "lang",
+							"value": "es"
+						},
+						{
+							"key": "bundle",
+							"value": "clips_grid_picker"
+						},
+						{
+							"key": "api_key",
+							"value": "cgJ71ojW0mP8IWYriv2LxmPflQ3EvrhB\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "api_key",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.giphy.com/v1/gifs/{{GIPHY_ID}}?rating=g",
+					"protocol": "https",
+					"host": [
+						"api",
+						"giphy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"gifs",
+						"{{GIPHY_ID}}"
+					],
+					"query": [
+						{
+							"key": "rating",
+							"value": "g"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "r1jbtDXIAjq92",
+			"value": "GIF_ID"
+		},
+		{
+			"key": "{{r1jbtDXIAjq92}}",
+			"value": "r1jbtDXIAjq92"
+		},
+		{
+			"key": "GIPHY_ID",
+			"value": "r1jbtDXIAjq92"
+		},
+		{
+			"key": "GIPHY_API_KEY",
+			"value": "cgJ71ojW0mP8IWYriv2LxmPflQ3EvrhB"
+		},
+		{
+			"key": "GIPHY_QUERY",
+			"value": "schnauzer"
+		}
+	]
+}
